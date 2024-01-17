@@ -17,8 +17,8 @@
         <nav>
             
             <img src="images/hj.jpg" class="logo">
-           <ul id="sidemenu">
-            <i class="fas fa-times" onclick="closemenu()"></i>
+           <ul id="sidemenu" onclick="closemenu()">
+            
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -40,8 +40,9 @@
         </h1>
        </div>
             <div id="about">
-                <div class="about-col-2">
+                
                     <h1 class="sub">About Me</h1>
+                  <div class="header-tag">
                     <p>I am Hope Joseph, A Zambian  third year Computer Science student at Mulungushi University, Great-North-Road campus. I have keen interest in exploring more about my career and I believe I have a huge honour to grab through the path i chose for myself, I invite everyone to dedicate themselves to time, i believe in achieving the most from the limited time i have. 
                     </p>
                 
@@ -142,9 +143,10 @@
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
+                    <h1 class="sub">Contact Me</h1>
                     <p><i class="fas fa-paper-plane"></i>josephhope107@gmail.com</p>
                     <p><i class="fas fa-phone-square-alt"></i>+260 97 44889 02</p>
+                    </div>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/hope.joseph.796569"><i class="fab fa-facebook"></i></a>
                         <a href=""><i class="fab fa-instagram"></i></a>
@@ -152,7 +154,7 @@
                         <a href=""><i class="fab fa-tiktok"></i></a>
                     </div>
                     <a href="images/hope joseph cv.pdf" class="btn">Download CV </a>
-                </div> 
+                
                 <div class="contact-right">
                     <form>
                         <input type="text" name="Name" placeholder="Your Name" required>
@@ -178,7 +180,7 @@
         function opentab(tabname){
             for(tablink of tablinks){
                 tablink.classList.remove("active-link");
-
+ 
             }
 
             for(tabcontent of tabcontents){
